@@ -10,7 +10,7 @@ class FlowerNetwokImage extends StatelessWidget {
     required this.imageUrl,
     required this.fallbackIcon,
     required this.fallbackColor,
-    required this.fit
+    this.fit = BoxFit.cover
   });
 
   final String imageUrl;
