@@ -5,7 +5,6 @@ import 'package:flowee_app/widgets/detail_total.dart';
 import 'package:flowee_app/widgets/product_summary.dart';
 import 'package:flowee_app/widgets/quantity_stepper.dart';
 import 'package:flowee_app/widgets/sheet_drag_handle.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 class DetailScreen extends StatefulWidget {
