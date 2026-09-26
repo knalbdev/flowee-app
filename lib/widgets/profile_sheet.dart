@@ -1,4 +1,5 @@
 import 'package:flowee_app/data/dummy_data.dart';
+import 'package:flowee_app/screens/login_screen.dart';
 import 'package:flowee_app/state/auth_controller.dart';
 import 'package:flowee_app/theme/app_theme.dart';
 import 'package:flowee_app/widgets/sheet_drag_handle.dart';
@@ -22,7 +23,7 @@ class _ProfileSheetContent extends StatelessWidget {
     await AuthController.instance.logout();
     if (!homeContext.mounted) {
       Navigator.of(homeContext).pushAndRemoveUntil(
-        MaterialPageRoute(builder: (_) => Placeholder()), // ARAHKAN NAVIGASI KE LOGIN SCREEN
+        MaterialPageRoute(builder: (_) => LoginScreen()), // ARAHKAN NAVIGASI KE LOGIN SCREEN
         /**
          * Predicate ini bilang: "hapus SEMUA halaman sebelumnya dari riwayat navigasi". 
          * jadi, setelah logout, tombol back tidak akan mengembalikan pengguna ke halaman home
